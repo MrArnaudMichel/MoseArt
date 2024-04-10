@@ -1,0 +1,13 @@
+[
+  {
+    "name": "Informatique",
+    "description": "Batiment Informatique",
+    "studentNumber": 250,
+    "studentCapacity": 300,
+    "studentInWorkStudy": 50,
+    "teacherNumber": 35,
+    "age": 60,
+    "buildingCostToBuild": 0,
+    "buildingCostToUpgrade": 3000000
+  }
+]
