@@ -15,10 +15,12 @@ internal class Building
     private int _studentAppreciation;
     private int _teacherNumber;
     private int _teacherAppreciation;
+    private int _teachSalary;
     private int _successRate;
     private int _age;
     private int _buildingCostToBuild;
     private int _buildingCostToUpgrade;
+    private int _energyCost;
     private bool _isBuilt;
     private bool _isUpgraded;
     
@@ -34,12 +36,16 @@ internal class Building
                 _studentCapacity = buildingData.StudentCapacity;
                 _studentInWorkStudy = buildingData.StudentInWorkStudy;
                 _teacherNumber = buildingData.TeacherNumber;
+                _teachSalary = buildingData.TeachSalary;
                 _successRate = buildingData.SuccessRate;
                 _age = buildingData.Age;
                 _buildingCostToBuild = buildingData.BuildingCostToBuild;
                 _buildingCostToUpgrade = buildingData.BuildingCostToUpgrade;
+                _energyCost = buildingData.EnergyCost;
                 _isBuilt = _buildingCostToBuild == 0;
                 _isUpgraded = _buildingCostToUpgrade == 0;
+                _studentAppreciation = 50;
+                _teacherAppreciation = 50;
             }
         }
     }
@@ -76,6 +82,11 @@ internal class Building
         get => _teacherAppreciation;
         set => _teacherAppreciation = value;
     }
+    public int TeachSalary
+    {
+        get => _teachSalary;
+        set => _teachSalary = value;
+    }
     public int SuccessRate
     {
         get => _successRate;
@@ -95,6 +106,11 @@ internal class Building
     {
         get => _buildingCostToUpgrade;
         set => _buildingCostToUpgrade = value;
+    }
+    public int EnergyCost
+    {
+        get => _energyCost;
+        set => _energyCost = value;
     }
     public bool IsBuilt
     {
@@ -116,10 +132,12 @@ internal class Building
                $"studentCapacity: {_studentCapacity}\n" +
                $"studentInWorkStudy: {_studentInWorkStudy}\n" +
                $"teacherNumber: {_teacherNumber}\n" +
+               $"teachSalary: {_teachSalary}\n" +
                $"successRate: {_successRate}\n" +
                $"age: {_age}\n" +
                $"buildingCostToBuild: {_buildingCostToBuild}\n" +
                $"buildingCostToUpgrade: {_buildingCostToUpgrade}\n" +
+               $"energyCost: {_energyCost}\n" +
                $"isBuilt: {_isBuilt}\n" +
                $"isUpgraded: {_isUpgraded}\n";
     }
@@ -136,10 +154,12 @@ internal class Building
             StudentCapacity = 210,
             StudentInWorkStudy = 48,
             TeacherNumber = 35,
+            TeachSalary = 5000,
             SuccessRate = 60,
             Age = 60,
             BuildingCostToBuild = 0,
-            BuildingCostToUpgrade = 3000000
+            BuildingCostToUpgrade = 3000000,
+            EnergyCost = 2000
         },
         new BuildingData
         {
@@ -149,10 +169,12 @@ internal class Building
             StudentCapacity = 500,
             StudentInWorkStudy = 124,
             TeacherNumber = 45,
+            TeachSalary = 6000,
             SuccessRate = 70,
             Age = 2,
             BuildingCostToBuild = 0,
             BuildingCostToUpgrade = 0,
+            EnergyCost = 150
         },
         new BuildingData
         {
@@ -162,10 +184,12 @@ internal class Building
             StudentCapacity = 260,
             StudentInWorkStudy = 52,
             TeacherNumber = 25,
+            TeachSalary = 4500,
             SuccessRate = 75,
             Age = 60,
             BuildingCostToBuild = 0,
             BuildingCostToUpgrade = 5000000,
+            EnergyCost = 2000
         },
         new BuildingData
         {
@@ -175,10 +199,12 @@ internal class Building
             StudentCapacity = 260,
             StudentInWorkStudy = 78,
             TeacherNumber = 30,
+            TeachSalary = 4500,
             SuccessRate = 80,
             Age = 60,
             BuildingCostToBuild = 0,
             BuildingCostToUpgrade = 2000000,
+            EnergyCost = 2000
             },
         new BuildingData
         {
@@ -188,10 +214,12 @@ internal class Building
             StudentCapacity = 250,
             StudentInWorkStudy = 64,
             TeacherNumber = 30,
+            TeachSalary = 4500,
             SuccessRate = 75,
             Age = 60,
             BuildingCostToBuild = 0,
             BuildingCostToUpgrade = 2000000,
+            EnergyCost = 2000
         },
     };
 }
@@ -204,8 +232,10 @@ public class BuildingData
     public int StudentCapacity { get; set; }
     public int StudentInWorkStudy { get; set; }
     public int TeacherNumber { get; set; }
+    public int TeachSalary { get; set; }
     public int SuccessRate { get; set; }
     public int Age { get; set; }
     public int BuildingCostToBuild { get; set; }
     public int BuildingCostToUpgrade { get; set; }
+    public int EnergyCost { get; set; }
 }
