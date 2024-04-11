@@ -1,7 +1,6 @@
 using System.IO;
 using UnityEditor;
 using UnityEngine;
-using System.Text.Json;
 using System;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -159,7 +158,7 @@ public class Building
             Age = 60,
             BuildingCostToBuild = 0,
             BuildingCostToUpgrade = 3000000,
-            EnergyCost = 2000
+            EnergyCost = 40000
         },
         new BuildingData
         {
@@ -174,7 +173,7 @@ public class Building
             Age = 2,
             BuildingCostToBuild = 0,
             BuildingCostToUpgrade = 0,
-            EnergyCost = 150
+            EnergyCost = 30000
         },
         new BuildingData
         {
@@ -189,7 +188,7 @@ public class Building
             Age = 60,
             BuildingCostToBuild = 0,
             BuildingCostToUpgrade = 5000000,
-            EnergyCost = 2000
+            EnergyCost = 40000
         },
         new BuildingData
         {
@@ -204,7 +203,7 @@ public class Building
             Age = 60,
             BuildingCostToBuild = 0,
             BuildingCostToUpgrade = 2000000,
-            EnergyCost = 2000
+            EnergyCost = 40000
             },
         new BuildingData
         {
@@ -219,7 +218,7 @@ public class Building
             Age = 60,
             BuildingCostToBuild = 0,
             BuildingCostToUpgrade = 2000000,
-            EnergyCost = 2000
+            EnergyCost = 40000
         },
     };
 }

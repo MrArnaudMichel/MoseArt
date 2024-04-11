@@ -27,6 +27,11 @@ public class PlayerVariables : MonoBehaviour
     public void Start()
     {
         addBuildings();
+        UpdateData();
+    }
+
+    public void UpdateData()
+    {
         globalNumberOfStudents = GetGlobalNumberOfStudents();
         globalNumberOfTeachers = GetGlobalNumberOfTeachers();
         globalNumberOfBuildings = GetGlobalNumberOfBuildings();
@@ -37,7 +42,6 @@ public class PlayerVariables : MonoBehaviour
         globalNumberSalaryOfTeachers = GetGlobalNumberSalaryOfTeachers();
         success_rate = GetSuccessRate();
     }
-
     public int Money { get => money; set => money = value; }
     public List<Building> Buildings { get => buildings; set => buildings = value; }
     public int GlobalSatisfactionRate { get => globalSatisfactionRate; set => globalSatisfactionRate = value; }
@@ -69,8 +73,10 @@ public class PlayerVariables : MonoBehaviour
         int total = 0;
         foreach (Building building in buildings)
         {
+            Debug.Log(building.StudentCapacity);
             total += building.StudentCapacity;
         }
+        Debug.Log("Total: " + total);
         return total;
     }
 

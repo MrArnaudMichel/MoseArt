@@ -153,13 +153,13 @@
     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Hub\Systems\Collection.cs" />
     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Settings\SettingsWindow.cs" />
     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Spots\Selectors\TypeSelectorElementSpot.cs" />
-    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Markers\MarkerEditor.cs" />
     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Variables\Views\Lists\NameListView.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Markers\MarkerEditor.cs" />
     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Save\Selectors\TypeSelectorMemory.cs" />
     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\TypeSelector\Selectors\Drawers\Elements\TTypeSelectorElement.cs" />
     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Events\EventElement.cs" />
-    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\UI\UnityUI\Editors\SliderPropertyFloatEditor.cs" />
     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Spots\Drawers\SpotListDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\UI\UnityUI\Editors\SliderPropertyFloatEditor.cs" />
     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Features\IK\Selectors\TypeSelectorRigLayer.cs" />
     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\UI\Templates\LabelProgress.cs" />
     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Reflection\Fields\ReflectionFieldFloatDrawer.cs" />
@@ -276,8 +276,8 @@
     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Installs\Windows\Templates\InstallerContent.cs" />
     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Reflection\Fields\ReflectionFieldStringDrawer.cs" />
     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Changers\TChangeValueDrawer.cs" />
-    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\UI\Templates\TextSeparator.cs" />
     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Common\TRunnerEditor.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\UI\Templates\TextSeparator.cs" />
     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Features\IK\Tools\RigLayersTool.cs" />
     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Installs\Windows\Templates\InstallerElementModule.cs" />
     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Settings\Welcome\WelcomeCommands.cs" />
@@ -355,8 +355,8 @@
     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\UI\Templates\PadBox.cs" />
     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Hub\Windows\Panels\HubExplorerContentDetails.cs" />
     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Cameras\Drawers\Systems\ShotSystemHeadLeaningDrawer.cs" />
-    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Cameras\Drawers\Systems\ShotSystemFollowDrawer.cs" />
     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Installs\Classes\Dependency.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Cameras\Drawers\Systems\ShotSystemFollowDrawer.cs" />
     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Variables\Drawers\Utilities\Detectors\DetectorLocalListVariableDrawer.cs" />
     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Box\TBoxDrawer.cs" />
     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\EditorSettings\EditorSettingsRegistrar.cs" />
@@ -385,8 +385,8 @@
     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Polymorphism\Properties\IPropertyDrawer.cs" />
     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\TypeSelector\Selectors\Types\Value\TypeSelectorValueDropdown.cs" />
     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Variables\Views\Lists\IndexListView.cs" />
-    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Features\Skeleton\Editors\SkeletonEditor.cs" />
     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Settings\Icons\IconWindowSettings.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Features\Skeleton\Editors\SkeletonEditor.cs" />
     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Reflection\Properties\ReflectionPropertyIntegerDrawer.cs" />
     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\TypeReference\TypeReferenceDrawer.cs" />
     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Instructions\Drawers\InstructionListDrawer.cs" />
@@ -444,8 +444,8 @@
     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Hub\Classes\Version.cs" />
     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Features\Animim\Assets\StateAnimationEditor.cs" />
     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Variables\Drawers\Utilities\Collectors\CollectorListVariableDrawer.cs" />
-    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Sequence\Icons\IconSequenceClipRemove.cs" />
     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\MaterialSounds\Drawers\MaterialSoundTextureDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\VisualScripting\Sequence\Icons\IconSequenceClipRemove.cs" />
     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Variables\Editors\TGlobalVariablesEditor.cs" />
     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Hub\GameCreatorHub.cs" />
     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\Reflection\Properties\ReflectionPropertyStringDrawer.cs" />
@@ -504,8 +504,8 @@
     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Hub\Windows\Panels\HubExplorerWindow.cs" />
     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Staging\APreviewSceneStage.cs" />
     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Save\Editors\RememberEditor.cs" />
-    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\MaterialSounds\Tools\MaterialSoundTool.cs" />
     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Characters\Systems\Units\Fields\UnitDriverDrawer.cs" />
+    <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\MaterialSounds\Tools\MaterialSoundTool.cs" />
     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Common\Utilities\Helpers\GameObject\NavLinkTypeDrawer.cs" />
     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Hub\Systems\Upload.cs" />
     <Compile Include="Assets\Plugins\GameCreator\Packages\Core\Editor\Variables\Drawers\Fields\Get\FieldGetLocalListDrawer.cs" />
@@ -925,32 +925,32 @@
     <Reference Include="UnityEditor.LinuxStandalone.Extensions">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.4f1\Editor\Data\PlaybackEngines\LinuxStandaloneSupport\UnityEditor.LinuxStandalone.Extensions.dll</HintPath>
     </Reference>
-    <Reference Include="unityplastic">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy@2.3.1\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
-    </Reference>
-    <Reference Include="log4netPlastic">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy@2.3.1\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Plastic.Newtonsoft.Json">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy@2.3.1\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Plastic.Antlr3.Runtime">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy@2.3.1\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.TextureAssets">
-      <HintPath>Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\EditorAssetResources\Unity.VisualScripting.TextureAssets.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.IonicZip">
-      <HintPath>Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll</HintPath>
+    <Reference Include="Unity.VisualScripting.YamlDotNet">
+      <HintPath>Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll</HintPath>
     </Reference>
     <Reference Include="ReportGeneratorMerged">
       <HintPath>Library\PackageCache\com.unity.testtools.codecoverage@1.2.4\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
     </Reference>
+    <Reference Include="unityplastic">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@2.3.1\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Plastic.Antlr3.Runtime">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@2.3.1\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Plastic.Newtonsoft.Json">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@2.3.1\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="log4netPlastic">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@2.3.1\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.IonicZip">
+      <HintPath>Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
       <HintPath>Library\PackageCache\com.unity.visualscripting@1.8.0\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.VisualScripting.YamlDotNet">
-      <HintPath>Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll</HintPath>
+    <Reference Include="Unity.VisualScripting.TextureAssets">
+      <HintPath>Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\EditorAssetResources\Unity.VisualScripting.TextureAssets.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>
