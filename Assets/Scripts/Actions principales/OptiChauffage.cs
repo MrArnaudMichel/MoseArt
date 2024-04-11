@@ -7,14 +7,17 @@ public class OptiChauffage : MonoBehaviour
 {
     [SerializeField] PlayerVariables playerVariables;
 
-
-    void Start()
+    public void Action()
     {
-        int heatingFee = playerVariables.GlobalEnergyCost;
-        int studentAppreciation = playerVariables.GlobalSatisfactionRate;
-        playerVariables.GlobalEnergyCost = (int)(heatingFee * 0.5);
-        playerVariables.GlobalSatisfactionRate = (int)(studentAppreciation * 0.9);
-        playerVariables.SuccessRate = (int)(playerVariables.SuccessRate * 0.85);
+        Debug.Log("OptiChauffage");
+        List<Building> building = playerVariables.Buildings;
+        foreach (Building buildingInf in building)
+        {
+            buildingInf.SuccessRate = (int)(buildingInf.SuccessRate * 0.85);
+            buildingInf.EnergyCost = (int)(buildingInf.EnergyCost * 0.5);
+            buildingInf.StudentAppreciation = (int)(buildingInf.StudentAppreciation * 0.9);
+            playerVariables.UpdateData();
+        }
     }
 
     void Update()

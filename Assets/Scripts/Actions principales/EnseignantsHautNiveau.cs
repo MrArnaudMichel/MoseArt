@@ -5,12 +5,17 @@ using UnityEngine;
 public class EnseignantsHautNiveau : MonoBehaviour
 {
     [SerializeField] PlayerVariables playerVariables;
-
-    void Start()
+    public void Action()
     {
-        playerVariables.GlobalSatisfactionRate = (int)(playerVariables.GlobalSatisfactionRate * 1.05);
-        playerVariables.SuccessRate = (int)(playerVariables.SuccessRate * 1.1);
-        playerVariables.Money = (int)(playerVariables.Money - 0.9);
+        List<Building> building = playerVariables.Buildings;
+
+        foreach (Building buildingData in building)
+        {
+            buildingData.SuccessRate = (int)(buildingData.SuccessRate * 1.1);
+            buildingData.StudentAppreciation = (int)(buildingData.StudentAppreciation * 1.05);
+        }
+        playerVariables.Money = (int)(playerVariables.Money * 0.9);
+        playerVariables.UpdateData();
     }
 
     void Update()

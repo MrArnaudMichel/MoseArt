@@ -2,10 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FuiteAmiante : MonoBehaviour
+public class FuiteAmiante
 {
-    [SerializeField] PlayerVariables playerVariables;
-    void Start()
+    public static void Start(PlayerVariables playerVariables)
     {
         playerVariables.Money = playerVariables.Money - 1000000;
         playerVariables.GlobalSatisfactionRate = (int)(playerVariables.GlobalSatisfactionRate * 0.85);

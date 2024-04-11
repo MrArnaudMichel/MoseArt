@@ -2,10 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Pandemie : MonoBehaviour
+public class Pandemie
 {
-    [SerializeField] PlayerVariables playerVariables;
-    void Start()
+    public static void Start(PlayerVariables playerVariables)
     {
         playerVariables.Money = playerVariables.Money - 1000000;
         playerVariables.SuccessRate = (int)(playerVariables.SuccessRate * 0.8);

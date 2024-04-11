@@ -2,10 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PanneMajeureIT : MonoBehaviour
+public class PanneMajeureIT
 {
-    [SerializeField] PlayerVariables playerVariables;
-    void Start()
+    public static void Start(PlayerVariables playerVariables)
     {
         playerVariables.GlobalSatisfactionRate = (int)(playerVariables.GlobalSatisfactionRate * 0.9);
         playerVariables.SuccessRate = (int)(playerVariables.SuccessRate* 0.95);

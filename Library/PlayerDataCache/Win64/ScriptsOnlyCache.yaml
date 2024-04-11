@@ -1,13 +1,25 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
-    - NewBehaviourScript
+    - CampagneDeComm
+    - CursorSetter
+    - DialogueManager
+    - EnseignantsHautNiveau
+    - Evenements
+    - LayerLab.PanelSimpleCasual
+    - MobiliteInternationale
+    - ModernisationEquipement
     - NextRound
+    - NouveauParcours
+    - OptiChauffage
+    - OutLineClick
     - Outline
     - PlayerVariables
     - Rotate
+    - StartDialogueIntro
     - UIValueSetter
     - afficheUiBat
+    - setupUI
     GameCreator.Runtime.Core:
     - GameCreator.Runtime.Common.GeneralSettings
     - GameCreator.Runtime.Common.UpdatesSettings
@@ -36,6 +48,7 @@ ScriptsOnlyBuild:
     - TMPro.TMP_Settings
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
+    - TMPro.TMP_SubMeshUI
     - TMPro.TextMeshProUGUI
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -65,24 +78,32 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.HorizontalLayoutGroup
     - UnityEngine.UI.Image
     - UnityEngine.UI.LayoutElement
+    - UnityEngine.UI.Mask
     - UnityEngine.UI.Shadow
     - UnityEngine.UI.Slider
+    - UnityEngine.UI.VerticalLayoutGroup
     - UnityEngine.UIElements.PanelRaycaster
   serializedClasses:
     GameCreator.Runtime.Core:
+    - GameCreator.Runtime.Characters.GetGameObjectPlayer
     - GameCreator.Runtime.Common.GeneralRepository
     - GameCreator.Runtime.Common.GetBoolValue
+    - GameCreator.Runtime.Common.GetDecimalDecimal
     - GameCreator.Runtime.Common.GetGameObjectInstance
+    - GameCreator.Runtime.Common.GetGameObjectSelf
     - GameCreator.Runtime.Common.GetSceneActive
     - GameCreator.Runtime.Common.GetStringString
+    - GameCreator.Runtime.Common.InputButtonKeyboardRelease
     - GameCreator.Runtime.Common.SaveSystem.StoragePlayerPrefs
     - GameCreator.Runtime.Common.UpdatesRepository
     - GameCreator.Runtime.Common.WelcomeRepository
     - GameCreator.Runtime.Variables.VariablesRepository
     - GameCreator.Runtime.VisualScripting.EventOnDisable
     - GameCreator.Runtime.VisualScripting.EventOnEnable
+    - GameCreator.Runtime.VisualScripting.EventOnInputButton
     - GameCreator.Runtime.VisualScripting.EventUIOnSelect
     - GameCreator.Runtime.VisualScripting.InstructionCommonDebugText
+    - GameCreator.Runtime.VisualScripting.InstructionCommonTimeWait
     - GameCreator.Runtime.VisualScripting.InstructionGameObjectSetActive
     - GameCreator.Runtime.VisualScripting.InstructionList
     Unity.TextMeshPro:
@@ -125,6 +146,69 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Slider/SliderEvent
     - UnityEngine.UI.SpriteState
   methodsToPreserve:
+  - assembly: Assembly-CSharp
+    fullTypeName: OptiChauffage
+    methodName: Action
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: Assembly-CSharp
+    fullTypeName: EnseignantsHautNiveau
+    methodName: Action
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: Assembly-CSharp
+    fullTypeName: CampagneDeComm
+    methodName: Action
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: Assembly-CSharp
+    fullTypeName: Evenements
+    methodName: Action
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: Assembly-CSharp
+    fullTypeName: ModernisationEquipement
+    methodName: Action
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: Assembly-CSharp
+    fullTypeName: MobiliteInternationale
+    methodName: Action
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: Assembly-CSharp
+    fullTypeName: DialogueManager
+    methodName: NextDialogue
+  - assembly: Assembly-CSharp
+    fullTypeName: NouveauParcours
+    methodName: Action
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: Assembly-CSharp
+    fullTypeName: NextRound
+    methodName: NextRoundAction
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: Assembly-CSharp
+    fullTypeName: NextRound
+    methodName: NextRoundAction
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: Assembly-CSharp
+    fullTypeName: NextRound
+    methodName: NextRoundAction
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
   - assembly: Assembly-CSharp
     fullTypeName: NextRound
     methodName: NextRoundAction
@@ -194,11 +278,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1672}
     - Class: 114
-      Script: {instanceID: 1678}
+      Script: {instanceID: 1674}
+    - Class: 114
+      Script: {instanceID: 1676}
     - Class: 114
       Script: {instanceID: 1680}
     - Class: 114
-      Script: {instanceID: 1684}
+      Script: {instanceID: 1682}
     - Class: 114
       Script: {instanceID: 1686}
     - Class: 114
@@ -216,47 +302,73 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1720}
     - Class: 114
-      Script: {instanceID: 3310}
+      Script: {instanceID: 3208}
     - Class: 114
-      Script: {instanceID: 3740}
+      Script: {instanceID: 3312}
     - Class: 114
-      Script: {instanceID: 3868}
+      Script: {instanceID: 3742}
     - Class: 114
-      Script: {instanceID: 4174}
+      Script: {instanceID: 3870}
     - Class: 114
-      Script: {instanceID: 4340}
+      Script: {instanceID: 4006}
     - Class: 114
-      Script: {instanceID: 4366}
+      Script: {instanceID: 4014}
     - Class: 114
-      Script: {instanceID: 5256}
+      Script: {instanceID: 4176}
     - Class: 114
-      Script: {instanceID: 5492}
+      Script: {instanceID: 4256}
     - Class: 114
-      Script: {instanceID: 5872}
+      Script: {instanceID: 4342}
     - Class: 114
-      Script: {instanceID: 8576}
+      Script: {instanceID: 4368}
     - Class: 114
-      Script: {instanceID: 8996}
+      Script: {instanceID: 4530}
     - Class: 114
-      Script: {instanceID: 9338}
+      Script: {instanceID: 4666}
     - Class: 114
-      Script: {instanceID: 9508}
+      Script: {instanceID: 5260}
     - Class: 114
-      Script: {instanceID: 10418}
+      Script: {instanceID: 5496}
     - Class: 114
-      Script: {instanceID: 10754}
+      Script: {instanceID: 5876}
     - Class: 114
-      Script: {instanceID: 10794}
+      Script: {instanceID: 6388}
     - Class: 114
-      Script: {instanceID: 11340}
+      Script: {instanceID: 8582}
     - Class: 114
-      Script: {instanceID: 11436}
+      Script: {instanceID: 8954}
     - Class: 114
-      Script: {instanceID: 12488}
+      Script: {instanceID: 9002}
     - Class: 114
-      Script: {instanceID: 13360}
+      Script: {instanceID: 9112}
     - Class: 114
-      Script: {instanceID: 123810}
+      Script: {instanceID: 9344}
+    - Class: 114
+      Script: {instanceID: 9514}
+    - Class: 114
+      Script: {instanceID: 10424}
+    - Class: 114
+      Script: {instanceID: 10672}
+    - Class: 114
+      Script: {instanceID: 10760}
+    - Class: 114
+      Script: {instanceID: 10800}
+    - Class: 114
+      Script: {instanceID: 11346}
+    - Class: 114
+      Script: {instanceID: 11442}
+    - Class: 114
+      Script: {instanceID: 12230}
+    - Class: 114
+      Script: {instanceID: 12496}
+    - Class: 114
+      Script: {instanceID: 12526}
+    - Class: 114
+      Script: {instanceID: 13368}
+    - Class: 114
+      Script: {instanceID: 35708}
+    - Class: 114
+      Script: {instanceID: 447922}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -324,6 +436,12 @@ ScriptsOnlyBuild:
     className: Button
   - hash:
       serializedVersion: 2
+      Hash: 6a356b04c25c0bb008c1b24bf8b0f996
+    assemblyName: UnityEngine.UI
+    namespaceName: UnityEngine.UI
+    className: CanvasScaler
+  - hash:
+      serializedVersion: 2
       Hash: b18151310f999106767addd7177d1a99
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
@@ -364,12 +482,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
     className: RectMask2D
-  - hash:
-      serializedVersion: 2
-      Hash: 6a356b04c25c0bb008c1b24bf8b0f996
-    assemblyName: UnityEngine.UI
-    namespaceName: UnityEngine.UI
-    className: CanvasScaler
   - hash:
       serializedVersion: 2
       Hash: e021fae07b7c73933e18725f76623e21
@@ -450,12 +562,6 @@ ScriptsOnlyBuild:
     className: HIDDescriptorWindow
   - hash:
       serializedVersion: 2
-      Hash: a639ad6dfdc144d01502c4af2e82edae
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: ScandaleAcademique
-  - hash:
-      serializedVersion: 2
       Hash: ebe23bc03150ffb28d8f3c7846c2e729
     assemblyName: GameCreator.Runtime.Core
     namespaceName: GameCreator.Runtime.Common.UnityUI
@@ -522,12 +628,6 @@ ScriptsOnlyBuild:
     className: ChromaticAberration
   - hash:
       serializedVersion: 2
-      Hash: a639ad6dfdc144d01502c4af2e82edae
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: ReformeGouvernementale
-  - hash:
-      serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -552,6 +652,12 @@ ScriptsOnlyBuild:
     className: VertexShakeA
   - hash:
       serializedVersion: 2
+      Hash: 70095928a35810c3b22d547cec6ba3b1
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: UIValueSetter
+  - hash:
+      serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -570,7 +676,7 @@ ScriptsOnlyBuild:
     className: UnityOnMouseDragMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 6ea86b81c04f9248fe491bc4405669c2
+      Hash: d9495df9dda8a9044f87be35146a4fe2
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: PlayerVariables
@@ -699,12 +805,6 @@ ScriptsOnlyBuild:
       Hash: a639ad6dfdc144d01502c4af2e82edae
     assemblyName: Assembly-CSharp
     namespaceName: 
-    className: InnovatilonPedagogique
-  - hash:
-      serializedVersion: 2
-      Hash: a639ad6dfdc144d01502c4af2e82edae
-    assemblyName: Assembly-CSharp
-    namespaceName: 
     className: CampagneDeComm
   - hash:
       serializedVersion: 2
@@ -828,6 +928,12 @@ ScriptsOnlyBuild:
     className: UnityOnPointerClickMessageListener
   - hash:
       serializedVersion: 2
+      Hash: 9038981ca477d6a671dccb38942561bc
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: DialogueManager
+  - hash:
+      serializedVersion: 2
       Hash: a774afc2d683a1fb0fa29ecc0d5a6fb5
     assemblyName: Unity.Postprocessing.Runtime
     namespaceName: UnityEngine.Rendering.PostProcessing
@@ -868,12 +974,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnBeginDragMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: a639ad6dfdc144d01502c4af2e82edae
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: EleveTable
   - hash:
       serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
@@ -927,7 +1027,7 @@ ScriptsOnlyBuild:
       Hash: 096c0a086a9895bd240efd937f48ac2e
     assemblyName: Assembly-CSharp
     namespaceName: 
-    className: NewBehaviourScript
+    className: OutLineClick
   - hash:
       serializedVersion: 2
       Hash: fb7d5311cdb0fe3e6599198d13dfcc4b
@@ -952,12 +1052,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro
     namespaceName: TMPro
     className: TextMeshProUGUI
-  - hash:
-      serializedVersion: 2
-      Hash: a639ad6dfdc144d01502c4af2e82edae
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: Guerre
   - hash:
       serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
@@ -1014,12 +1108,6 @@ ScriptsOnlyBuild:
     className: Outline
   - hash:
       serializedVersion: 2
-      Hash: a639ad6dfdc144d01502c4af2e82edae
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: VagueFroid
-  - hash:
-      serializedVersion: 2
       Hash: 200207f2d5ea252502206e81ef4215b1
     assemblyName: Unity.InputSystem
     namespaceName: UnityEngine.InputSystem
@@ -1066,12 +1154,6 @@ ScriptsOnlyBuild:
     assemblyName: GameCreator.Runtime.Core
     namespaceName: GameCreator.Runtime.Variables
     className: LocalNameVariables
-  - hash:
-      serializedVersion: 2
-      Hash: a639ad6dfdc144d01502c4af2e82edae
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: FuiteAmiante
   - hash:
       serializedVersion: 2
       Hash: 53c46bce503f838890a138bb8aac7598
@@ -1404,7 +1486,7 @@ ScriptsOnlyBuild:
     className: UnityOnCollisionEnterMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 1abed48043066d3306adc46d1896f5e1
+      Hash: 751e5bae2a317288c2ab58d66687092b
     assemblyName: Assembly-CSharp
     namespaceName: LayerLab
     className: PanelSimpleCasual
@@ -1452,7 +1534,7 @@ ScriptsOnlyBuild:
     className: SaveActualPlayerVariable
   - hash:
       serializedVersion: 2
-      Hash: 2cc754eca048e01f9afaaf25a1b718af
+      Hash: 223ed2557f82514ae0ae95d6416252d1
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: NextRound
@@ -1648,12 +1730,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro
     namespaceName: TMPro
     className: TMP_SpriteAsset
-  - hash:
-      serializedVersion: 2
-      Hash: a639ad6dfdc144d01502c4af2e82edae
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: Pandemie
   - hash:
       serializedVersion: 2
       Hash: ec25200ef221f0c1977f77a9f3580ea8
@@ -1932,12 +2008,6 @@ ScriptsOnlyBuild:
     className: Tweener
   - hash:
       serializedVersion: 2
-      Hash: a639ad6dfdc144d01502c4af2e82edae
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: DonImportant
-  - hash:
-      serializedVersion: 2
       Hash: 751d867553f413cde86fe5db0b02780d
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.EventSystems
@@ -2064,12 +2134,6 @@ ScriptsOnlyBuild:
     className: EventTrigger
   - hash:
       serializedVersion: 2
-      Hash: a639ad6dfdc144d01502c4af2e82edae
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: PanneMajeureIT
-  - hash:
-      serializedVersion: 2
       Hash: a31fd79490479c7454bc49ff7ef65bbf
     assemblyName: Assembly-CSharp
     namespaceName: TMPro.Examples
@@ -2166,11 +2230,23 @@ ScriptsOnlyBuild:
     className: UnityOnSliderValueChangedMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 70095928a35810c3b22d547cec6ba3b1
+      Hash: 1e9cfb0f57b4c2678228e63ff9bc8c52
     assemblyName: Assembly-CSharp
     namespaceName: 
-    className: UIValueSetter
+    className: StartDialogueIntro
+  - hash:
+      serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: OuTlineClick
+  - hash:
+      serializedVersion: 2
+      Hash: 3aba0e1a717e54a7f516473c8eaa97ea
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: setupUI
   platform: 19
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: F:/Programmation/Unity/T4 (1)/Build/T4.exe
+  playerPath: F:/Programmation/Unity/T4 (1)/Build/MoseArt.exe

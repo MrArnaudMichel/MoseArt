@@ -2,10 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InnovatilonPedagogique : MonoBehaviour
+public class InnovatilonPedagogique
 {
-    [SerializeField] PlayerVariables playerVariables;
-    void Start()
+    public static void Start(PlayerVariables playerVariables)
     {
         playerVariables.SuccessRate = (int)(playerVariables.SuccessRate * 1.2);
         playerVariables.GlobalSatisfactionRate = (int)(playerVariables.GlobalSatisfactionRate * 1.1);

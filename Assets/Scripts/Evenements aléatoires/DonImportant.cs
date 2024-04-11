@@ -2,10 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DonImportant : MonoBehaviour
+public class DonImportant
 {
-    [SerializeField] PlayerVariables playerVariables;
-    void Start()
+    public static void Start(PlayerVariables playerVariables)
     {
         playerVariables.Money = playerVariables.Money + 500000;
     }

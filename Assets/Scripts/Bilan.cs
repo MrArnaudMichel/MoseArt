@@ -10,21 +10,22 @@ public class Bilan : MonoBehaviour
         CompareAndDisplaySummary();
     }
 
+    public int savedMoney = PlayerPrefs.GetInt("money", 0);
+    public int savedGlobalSatisfactionRate = PlayerPrefs.GetInt("globalSatisfactionRate", 0);
+    public int savedSuccessRate = PlayerPrefs.GetInt("success_rate", 0);
+    public int savedGlobalNumberOfStudents = PlayerPrefs.GetInt("globalNumberOfStudents", 0);
+    public int savedGlobalNumberStudentCapacity = PlayerPrefs.GetInt("globalNumberStudentCapacity", 0);
+    public int savedGlobalNumberOfStudentsInWorkStudy = PlayerPrefs.GetInt("globalNumberOfStudentsInWorkStudy", 0);
+    public int savedGlobalNumberOfTeachers = PlayerPrefs.GetInt("globalNumberOfTeachers", 0);
+    public int savedGlobalNumberSalaryOfTeachers = PlayerPrefs.GetInt("globalNumberSalaryOfTeachers", 0);
+    public int savedGlobalNumberOfBuildings = PlayerPrefs.GetInt("globalNumberOfBuildings", 0);
+    public int savedGlobalEnergyCost = PlayerPrefs.GetInt("globalEnergyCost", 0);
+    public int savedAttractionRate = PlayerPrefs.GetInt("attractionRate", 0);
+    public int savedQuotaGeneralTechnological = PlayerPrefs.GetInt("quotaGeneralTechnological", 0);
+    public int savedErasmus = PlayerPrefs.GetInt("erasmus", 0);
+
     void CompareAndDisplaySummary()
     {
-        int savedMoney = PlayerPrefs.GetInt("money", 0);
-        int savedGlobalSatisfactionRate = PlayerPrefs.GetInt("globalSatisfactionRate", 0);
-        int savedSuccessRate = PlayerPrefs.GetInt("success_rate", 0);
-        int savedGlobalNumberOfStudents = PlayerPrefs.GetInt("globalNumberOfStudents", 0);
-        int savedGlobalNumberStudentCapacity = PlayerPrefs.GetInt("globalNumberStudentCapacity", 0);
-        int savedGlobalNumberOfStudentsInWorkStudy = PlayerPrefs.GetInt("globalNumberOfStudentsInWorkStudy", 0);
-        int savedGlobalNumberOfTeachers = PlayerPrefs.GetInt("globalNumberOfTeachers", 0);
-        int savedGlobalNumberSalaryOfTeachers = PlayerPrefs.GetInt("globalNumberSalaryOfTeachers", 0);
-        int savedGlobalNumberOfBuildings = PlayerPrefs.GetInt("globalNumberOfBuildings", 0);
-        int savedGlobalEnergyCost = PlayerPrefs.GetInt("globalEnergyCost", 0);
-        int savedAttractionRate = PlayerPrefs.GetInt("attractionRate", 0);
-        int savedQuotaGeneralTechnological = PlayerPrefs.GetInt("quotaGeneralTechnological", 0);
-        int savedErasmus = PlayerPrefs.GetInt("erasmus", 0);
 
         Debug.Log("Résumé des différences :");
         Debug.Log("Argent : " + (playerVariables.Money - savedMoney));

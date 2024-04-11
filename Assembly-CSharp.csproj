@@ -65,14 +65,17 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />
     <Compile Include="Assets\Scripts\Evenements aléatoires\Pandemie.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
+    <Compile Include="Assets\CameraMovement.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SimpleScript.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark04.cs" />
     <Compile Include="Assets\Scripts\Actions principales\CampagneDeComm.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ChatController.cs" />
+    <Compile Include="Assets\Scripts\Choix\Pandemie.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_DigitValidator.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
     <Compile Include="Assets\Scripts\PlayerVariables.cs" />
+    <Compile Include="Assets\setupUI.cs" />
     <Compile Include="Assets\Scripts\Bilan.cs" />
     <Compile Include="Assets\Scripts\Building.cs" />
     <Compile Include="Assets\QuickOutline\Scripts\Outline.cs" />
@@ -87,6 +90,7 @@
     <Compile Include="Assets\Scripts\Evenements aléatoires\ScandaleAcademique.cs" />
     <Compile Include="Assets\Scripts\Evenements aléatoires\VagueFroid.cs" />
     <Compile Include="Assets\Scripts\Animations\Move.cs" />
+    <Compile Include="Assets\DialogueData.cs" />
     <Compile Include="Assets\Scripts\SaveActualPlayerVariable.cs" />
     <Compile Include="Assets\Scripts\Evenements aléatoires\Guerre.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_ExampleScript_01.cs" />
@@ -95,6 +99,9 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\DropdownSample.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexColorCycler.cs" />
+    <Compile Include="Assets\DialogueManager.cs" />
+    <Compile Include="Assets\StartDialogueIntro.cs" />
+    <Compile Include="Assets\SetRecapUI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ObjectSpin.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_PhoneNumberValidator.cs" />
     <Compile Include="Assets\Scripts\quit.cs" />
@@ -106,6 +113,7 @@
     <Compile Include="Assets\GUI PRO Kit - Simple Casual\Scripts\PanelControlSimpleCasual.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_UiFrameRateCounter.cs" />
     <Compile Include="Assets\Scripts\UI\CursorSetter.cs" />
+    <Compile Include="Assets\Scripts\Choix\Choix.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
     <Compile Include="Assets\Scripts\Animations\Rotate.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />

@@ -2,10 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ReformeGouvernementale : MonoBehaviour
+public class ReformeGouvernementale
 {
-    [SerializeField] PlayerVariables playerVariables;
-    void Start()
+    public static void Start(PlayerVariables playerVariables)
     {
         playerVariables.SuccessRate = (int)(playerVariables.SuccessRate * 0.8);
         playerVariables.Money = playerVariables.Money - 100000;

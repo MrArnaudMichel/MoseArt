@@ -6,6 +6,7 @@
 .Temp/
 Temp/
 Library/ArtifactDB
+Build/
 # User-specific files
 *.rsuser
 *.suo

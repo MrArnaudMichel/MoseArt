@@ -5,16 +5,22 @@ using UnityEngine;
 public class CampagneDeComm : MonoBehaviour
 {
     [SerializeField] PlayerVariables playerVariables;
-    [SerializeField] Building building;
-    void Start()
+    public void Action()
     {
-        playerVariables.GlobalSatisfactionRate = (int)(playerVariables.GlobalSatisfactionRate * 1.05);
+        List<Building> building = playerVariables.Buildings;
+
         playerVariables.AttractionRate = (int)(playerVariables.AttractionRate * 1.05);
-        foreach (var buildingData in building.buildingDatas)
+        foreach (Building buildingData in building)
         {
-            buildingData.StudentNumber = (int)(buildingData.StudentNumber +10);
+            buildingData.StudentAppreciation = (int)(buildingData.StudentAppreciation * 1.05);
+            if (buildingData.StudentNumber < buildingData.StudentCapacity)
+            {
+                buildingData.StudentNumber = (int)(buildingData.StudentNumber + 10);
+            }
+            else { }
         }
         playerVariables.Money = playerVariables.Money - 100000;
+        playerVariables.UpdateData();
     }
 
     void Update()

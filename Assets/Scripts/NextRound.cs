@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.Rendering.PostProcessing;
@@ -16,6 +17,9 @@ public class NextRound : MonoBehaviour
     [SerializeField] Material grass;
     [SerializeField] Material tree;
     [SerializeField] GameObject directionalLight;
+
+    [SerializeField] GameObject dialogueObj;
+    [SerializeField] SetRecapUI setRecapUI;
     public void Awake()
     {
         playerVariables.trimester = 1;
@@ -23,6 +27,11 @@ public class NextRound : MonoBehaviour
     }
     public void NextRoundAction()
     {
+        if (playerVariables.year == 4)
+        {
+            ActiveEndGame();
+            return;
+        }
         if (playerVariables.trimester % 4 == 0)
         {
             playerVariables.Money = CalculNextMoney();
@@ -55,6 +64,16 @@ public class NextRound : MonoBehaviour
         playerVariables.trimester++;
         SwitchSeason();
         playerVariables.UpdateData();
+        setRecapUI.SetValue();
+        playerVariables.SetValueAtStartRound();
+        RandomEvent();
+    }
+
+    private void ActiveEndGame()
+    {
+        playerVariables.dialogueManager.mainUI.SetActive(false);
+        playerVariables.dialogueManager.StartDialogue(12);
+        // TODO: Implement end game UI
     }
 
     private void SwitchSeason()
@@ -130,5 +149,116 @@ public class NextRound : MonoBehaviour
         tempMoney += 1000000;
         tempMoney += (int)(playerVariables.GlobalNumberOfStudentsInWorkStudy * 6000 * 0.16);
         return tempMoney;
+    }
+    public void RandomEvent()
+    {
+        int random = -1;
+        int chance = -1;
+        DialogueManager dialogueManager = dialogueObj.GetComponent<DialogueManager>();
+        if (playerVariables.trimester == 3)
+        {
+            // Winter
+            chance = UnityEngine.Random.Range(1, 5);
+            if (chance == 1)
+            {
+                //VagueFroid.Start(playerVariables);
+                Debug.Log("VagueFroid");
+                dialogueManager.StartDialogue(10, 2);
+                return;
+            }
+        }
+        else
+        {
+            chance = UnityEngine.Random.Range(1, 50);
+            switch (chance)
+            {
+                case 1:
+                    //Pandemie.Start(playerVariables);
+                    Debug.Log("Pandemie");
+                    dialogueManager.StartDialogue(6, 0);
+                    break;
+                case 2:
+                    //ScandaleAcademique.Start(playerVariables);
+                    Debug.Log("ScandaleAcademique");
+                    dialogueManager.StartDialogue(9, 1);
+                    break;
+                case 3:
+                    Debug.Log("4M CPer");
+                    dialogueManager.StartDialogue(2, 3);
+                    break;
+            }
+        }
+        
+
+        if (chance ==1)
+        {
+            if (random == 1)
+            {
+                DonImportant.Start(playerVariables);
+                Debug.Log("DonImportant");
+                dialogueManager.StartDialogue(1);
+
+
+            }
+            else if (random == 2)
+            {
+                EleveTable.Start(playerVariables);
+                Debug.Log("EleveTable");
+                dialogueManager.StartDialogue(2);
+            }
+            else if (random == 3)
+            {
+                FuiteAmiante.Start(playerVariables);
+                Debug.Log("FuiteAmiante");
+                dialogueManager.StartDialogue(3);
+            }
+            else if (random == 4)
+            {
+                Guerre.Start(playerVariables);
+                Debug.Log("Guerre");
+                dialogueManager.StartDialogue(4);
+            }
+            else if (random == 5)
+            {
+                InnovatilonPedagogique.Start(playerVariables);
+                Debug.Log("InnovatilonPedagogique");
+                dialogueManager.StartDialogue(5);
+            }
+            else if (random == 6)
+            {
+                Pandemie.Start(playerVariables);
+                Debug.Log("Pandemie");
+                dialogueManager.StartDialogue(6);
+            }
+            else if (random == 7)
+            {
+                PanneMajeureIT.Start(playerVariables);
+                Debug.Log("PanneMajeureIT");
+                dialogueManager.StartDialogue(7);
+            }
+            else if (random == 8)
+            {
+                ReformeGouvernementale.Start(playerVariables);
+                Debug.Log("ReformeGouvernementale");
+                dialogueManager.StartDialogue(8);
+
+            }
+            else if (random == 9)
+            {
+                ScandaleAcademique.Start(playerVariables);
+                Debug.Log("ScandaleAcademique");
+                dialogueManager.StartDialogue(9);
+            }
+            else if (random == 10)
+            {
+                VagueFroid.Start(playerVariables);
+                Debug.Log("VagueFroid");
+                dialogueManager.StartDialogue(10);
+            }
+        }
+        else
+        {
+            Debug.Log("Pas d'evenement");
+        }
     }
 }

@@ -5,12 +5,18 @@ using UnityEngine;
 public class MobiliteInternationale : MonoBehaviour
 {
     [SerializeField] PlayerVariables playerVariables;
-
-    void Start()
+    public void Action()
     {
-        playerVariables.GlobalSatisfactionRate = (int)(playerVariables.GlobalSatisfactionRate*1.1);
-        playerVariables.SuccessRate = (int)((playerVariables.SuccessRate * 1.05));
+        List<Building> building = playerVariables.Buildings;
+
+        foreach (Building buildingData in building)
+        {
+            buildingData.SuccessRate = (int)(buildingData.SuccessRate *1.05);
+            buildingData.StudentAppreciation = (int)(buildingData.StudentAppreciation * 1.1);
+        }
         playerVariables.Money = (int)(playerVariables.Money - 100000);
+        playerVariables.UpdateData();
+
     }
 
     void Update()

@@ -23,11 +23,42 @@ public class PlayerVariables : MonoBehaviour
 
     [SerializeField] public int year = 1;
     [SerializeField] public int trimester = 1;
+    [SerializeField] public DialogueManager dialogueManager;
+
+    public int atStartRoundMoney = 0;
+    public int atStartglobalSatisfactionRate = 0;
+    public int atStartsuccess_rate = 0;
+    public int atStartglobalNumberOfStudents = 0;
+    public int atStartglobalNumberStudentCapacity = 0;
+    public int atStartglobalNumberOfStudentsInWorkStudy = 0;
+    public int atStartglobalNumberOfTeachers = 0;
+    public int atStartglobalNumberSalaryOfTeachers = 0;
+    public int atStartglobalNumberOfBuildings = 0;
+    public int atStartglobalEnergyCost = 0;
+    public int atStartattractionRate = 0;
+    public int atStartquotaGeneralTechnological = 0;
+    
+    public void SetValueAtStartRound()
+    {
+        atStartRoundMoney = money;
+        atStartglobalSatisfactionRate = globalSatisfactionRate;
+        atStartsuccess_rate = success_rate;
+        atStartglobalNumberOfStudents = globalNumberOfStudents;
+        atStartglobalNumberStudentCapacity = globalNumberStudentCapacity;
+        atStartglobalNumberOfStudentsInWorkStudy = globalNumberOfStudentsInWorkStudy;
+        atStartglobalNumberOfTeachers = globalNumberOfTeachers;
+        atStartglobalNumberSalaryOfTeachers = globalNumberSalaryOfTeachers;
+        atStartglobalNumberOfBuildings = globalNumberOfBuildings;
+        atStartglobalEnergyCost = globalEnergyCost;
+        atStartattractionRate = attractionRate;
+        atStartquotaGeneralTechnological = quotaGeneralTechnological;
+    }
 
     public void Start()
     {
         addBuildings();
         UpdateData();
+        SetValueAtStartRound();
     }
 
     public void UpdateData()

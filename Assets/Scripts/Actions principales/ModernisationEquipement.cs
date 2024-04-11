@@ -5,13 +5,20 @@ using UnityEngine;
 public class ModernisationEquipement : MonoBehaviour
 {
     [SerializeField] PlayerVariables playerVariables;
-
-    void Start()
+    public void Action()
     {
+        List<Building> building = playerVariables.Buildings;
+
+        foreach (Building buildingData in building)
+        {
+            buildingData.SuccessRate = (int)(buildingData.SuccessRate * 1.1);
+        }
         playerVariables.Money = playerVariables.Money - 300000;
-        playerVariables.SuccessRate = (int)(playerVariables.SuccessRate * 1.1);
         playerVariables.AttractionRate = (int)(playerVariables.AttractionRate * 1.1);
+        playerVariables.UpdateData();
+
     }
+
 
     void Update()
     {

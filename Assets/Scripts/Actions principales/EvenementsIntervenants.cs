@@ -5,11 +5,18 @@ using UnityEngine;
 public class Evenements : MonoBehaviour
 {
     [SerializeField] PlayerVariables playerVariables;
-    void Start()
+    public void Action()
     {
-        playerVariables.SuccessRate = (int)(playerVariables.SuccessRate * 1.1);
+        List<Building> building = playerVariables.Buildings;
+
+        foreach (Building buildingData in building)
+        {
+            buildingData.SuccessRate = (int)(buildingData.SuccessRate * 1.1);
+        }
         playerVariables.AttractionRate = (int)(playerVariables.AttractionRate * 1.1);
         playerVariables.Money = playerVariables.Money - 50000;
+        playerVariables.UpdateData();
+
     }
 
     void Update()
