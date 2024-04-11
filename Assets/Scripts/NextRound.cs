@@ -25,10 +25,15 @@ public class NextRound : MonoBehaviour
                 }
                 else if (building.SuccessRate < 50 || building.StudentAppreciation > 50)
                 {
-                    building.StudentNumber = (int)(building.StudentNumber * 0.05);
+                    building.StudentNumber = (int)(building.StudentNumber * 0.95);
                 }
-                // TODO: Add success rate and student appreciation to the player variables
+                if (building.StudentNumber / 30 > building.TeacherNumber)
+                {
+                    building.TeacherNumber = (int)(building.TeacherNumber * 0.95);
+                }
+
             }
+            playerVariables.Money -= cost;
             playerVariables.trimester = 1;
             playerVariables.year++;
         }
