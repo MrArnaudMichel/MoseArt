@@ -5,7 +5,7 @@ using System.Text.Json;
 using System;
 using System.Collections.Generic;
 using Unity.VisualScripting;
-internal class Building
+public class Building
 {
     private readonly string _name;
     private readonly string _description;

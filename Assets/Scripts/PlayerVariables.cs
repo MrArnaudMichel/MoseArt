@@ -21,6 +21,9 @@ public class PlayerVariables : MonoBehaviour
     [SerializeField] private int quotaGeneralTechnological = 0;
     [SerializeField] private int erasmus = 0;
 
+    [SerializeField] public int year = 1;
+    [SerializeField] public int trimester = 1;
+
     public void Start()
     {
         addBuildings();
@@ -36,6 +39,7 @@ public class PlayerVariables : MonoBehaviour
     }
 
     public int Money { get => money; set => money = value; }
+    public List<Building> Buildings { get => buildings; set => buildings = value; }
     public int GlobalSatisfactionRate { get => globalSatisfactionRate; set => globalSatisfactionRate = value; }
     public int SuccessRate { get => success_rate; set => success_rate = value; }
     public int GlobalNumberOfStudents { get => globalNumberOfStudents; set => globalNumberOfStudents = value; }
